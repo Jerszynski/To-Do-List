@@ -88,7 +88,7 @@
   text-decoration: line-through;
   padding: 5px;
   border-radius: 4px;
-  background-color: #dfdfdfc6;
+  background-color: green;
 }
 
 .tasksList__button--done {
