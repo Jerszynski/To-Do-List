@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="javascript/javascript.js"></script>
+
+    <title>To Do List</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="header">
+        <h1 class="header__title">ToDo List</h1>
+      </div>
+
+      <div class="newTask">
+        <p class="newTask__title">Add new task</p>
+      </div>
+
+      <div class="newTaskField">
+        <input
+          name="taskName"
+          type="text"
+          size="90"
+          placeholder="Add your task here."
+          autofocus
+          class="newTaskField__input js-input"
+        />
+        <p class="newTaskField__button js-addTask">Add task</p>
+      </div>
+
+      <div class="taskListTitle">
+        <p class="taskList__title">Task list</p>
+      </div>
+
+      <div class="taskList">
+        <p>Here will be shown list of tasks</p>
+        <ul class="js-taskList"></ul>
+      </div>
+    </div>
+  </body>
+</html>
