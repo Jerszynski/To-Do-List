@@ -27,28 +27,29 @@
       </div>
 
       <div class="newTask">
-        <p class="newTask__title">Add new task</p>
+        <p class="newTask__title">Add new task below:</p>
       </div>
 
       <div class="newTaskField">
-        <input
-          name="taskName"
-          type="text"
-          size="90"
-          placeholder="Add your task here."
-          autofocus
-          class="newTaskField__input js-input"
-        />
-        <p class="newTaskField__button js-addTask">Add task</p>
+        <form class="js-form">
+          <input
+            name="taskName"
+            type="text"
+            size="90"
+            placeholder="Add your task here."
+            autofocus
+            class="newTaskField__input js-input"
+          />
+          <button class="newTaskField__button js-addTask">Add task</button>
+        </form>
       </div>
 
       <div class="taskListTitle">
-        <p class="taskList__title">Task list</p>
+        <p class="taskList__title">Task list:</p>
       </div>
 
-      <div class="taskList">
-        <p>Here will be shown list of tasks</p>
-        <ul class="js-taskList"></ul>
+      <div class="tasks">
+        <ul class="tasksList js-taskList"></ul>
       </div>
     </div>
   </body>
