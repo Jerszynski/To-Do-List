@@ -32,6 +32,7 @@
     toggleDoneButtons.forEach((toggleDoneButton, index) => {
       toggleDoneButton.addEventListener("click", () => {
         toggleTaskDone(index);
+        `<button class="tasksList__button--done">✔</button>`;
       });
     });
   };
@@ -41,13 +42,15 @@
 
     for (const task of tasks) {
       htmlString += `
-          <button class="tasksList__button--done js-done">✔</button>
+          <button class="tasksList__button--done js-done">${
+            task.done ? "&check;" : ""
+          }</button>
           <li class="tasksList__item${
             task.done ? " tasksList__item--done" : ""
           }">
           ${task.content}
           </li>
-          <button class="tasksList__button--delete js-trash">Trash</button>
+          <button class="tasksList__button--delete js-trash">&#9747;</button>
           `;
     }
     document.querySelector(".js-taskList").innerHTML = htmlString;
@@ -65,6 +68,7 @@
     }
 
     addNewTask(newTaskItem);
+    document.querySelector(".js-input").value = "";
   };
 
   const init = () => {
