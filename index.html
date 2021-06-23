@@ -25,35 +25,31 @@
     <title>To Do List</title>
   </head>
   <body class="body">
-    <div class="container">
-      <div class="header">
-        <h1 class="header__title">To Do List</h1>
-      </div>
+    <main class="container">
 
-      <div class="newTask">
-        <p class="newTask__title">Add new task below:</p>
-      </div>
+      <header class="header">To Do List</header>
 
-      <div class="newTaskField">
-        <form class="newTaskField__form js-form">
+      <section class="section">
+        <p class="newTask__header">Add new task below:</p>
+
+        <form class="newTask__form js-form">
           <input
             name="taskName"
             type="text"
             placeholder="Eee... What's up Doc?"
             autofocus
-            class="newTaskField__input js-input"
+            class="newTask__input js-input"
           />
-          <button class="newTaskField__button js-addTask">Add task</button>
+          <button class="newTask__button js-addTask">Add task</button>
         </form>
-      </div>
+      </section>
 
-      <div class="taskListTitle">
-        <p class="taskList__title">Tasks list:</p>
-      </div>
+      <section class="section">
+        <p class="taskList__header">Tasks list:</p>
 
-      <div class="tasks">
         <ul class="tasksList js-taskList"></ul>
-      </div>
-    </div>
+      </section>
+
+    </main>
   </body>
 </html>
