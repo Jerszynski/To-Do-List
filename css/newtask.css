@@ -30,10 +30,12 @@
   font-weight: 700;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .newTask__button:hover {
-  background: rgb(84, 196, 134);
+  background: rgb(84, 196, 134, 0.80);
+  transform: scale(1.1);
 }
 
 .newTask__button:active {

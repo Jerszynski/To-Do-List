@@ -38,10 +38,11 @@
   border: none;
   border-radius: 4px;
   font-weight: 700;
+  transition: 0.5s;
 }
 
 .tasksList__button:hover {
-  background-color: rgba(0, 150, 0, 0.75);
+  background-color: rgba(0, 150, 0, 0.65);
 }
 
 .tasksList__button:active {
@@ -58,10 +59,11 @@
   border: none;
   border-radius: 4px;
   font-weight: 700;
+  transition: 0.5s;
 }
 
 .tasksList__button--delete:hover {
-  background-color: rgba(255, 80, 80);
+  background-color: rgba(255, 80, 80, 0.80);
 }
 
 .tasksList__button--delete:active {
