@@ -26,7 +26,6 @@
   </head>
   <body class="body">
     <main class="container">
-
       <header class="header">To Do List</header>
 
       <section class="section">
@@ -45,14 +44,17 @@
       </section>
 
       <section class="section">
-        <div>
-        <p class="taskList__header">Tasks list:</p>
-        <p>Ukryj ukończone</p>
-        <p>Ukończ wszystkie</p>
-      </div>
+        <div class="taskList">
+          <p class="taskList__header">Tasks list:</p>
+          <button class="taskList__button js-hideButton">
+            Hide Tasks Done
+          </button>
+          <button class="taskList__button js-completeButton">
+            Complete All
+          </button>
+        </div>
         <ul class="tasksList js-taskList"></ul>
       </section>
-
     </main>
   </body>
 </html>

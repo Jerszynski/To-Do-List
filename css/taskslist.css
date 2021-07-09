@@ -1,8 +1,29 @@
+.taskList {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 0.3fr;
+  grid-gap: 5px;
+  border-bottom: 2px solid #eee;
+}
+
+.taskList__button {
+  align-self: start;
+  justify-self: center;
+  border: none;
+  background: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.taskList__button:hover {
+  color: red;
+  transform: scale(1.01);
+}
+
 .taskList__header {
   margin: 0;
   padding: 20px;
   font-size: 20px;
-  border-bottom: 2px solid #eee;
 }
 
 .tasksList {
@@ -63,7 +84,7 @@
 }
 
 .tasksList__button--delete:hover {
-  background-color: rgba(255, 80, 80, 0.80);
+  background-color: rgba(255, 80, 80, 0.8);
 }
 
 .tasksList__button--delete:active {

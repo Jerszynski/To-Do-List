@@ -34,7 +34,7 @@
 }
 
 .newTask__button:hover {
-  background: rgb(84, 196, 134, 0.80);
+  background: rgb(84, 196, 134, 0.8);
   transform: scale(1.1);
 }
 
